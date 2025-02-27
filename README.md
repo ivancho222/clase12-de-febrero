@@ -49,8 +49,10 @@ Se utiliza para medir mas de una variable
   $G1=\frac{e^-10s}{15s+1}$  
 
   G2 es mas rapido, esto se puede deducir gracias al tao.
-  $R=\frac{0.9*T2}{K2*tm}$
+  
   $R=\frac{0.9*2}{0.5}$  
+  $R=\frac{0.9*2}{0.5}$  
+  $R=\frac{0.9*T2}{K2*tm}$
   
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
