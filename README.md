@@ -51,6 +51,7 @@ Se utiliza para medir mas de una variable
   G2 es mas rapido, esto se puede deducir gracias al tao.
 
   De acuerdo a esto vamos a realizar el siguente despeje
+  $Kc2=\frac{0.9*T2}{k2*tm}$
   $R=\frac{0.9*2}{0.5}$  
   $=36$
 ## 4. Ejemplos
