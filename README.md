@@ -1,30 +1,25 @@
 # CLASE-12-DE-FEBRERO
-# CONTROL METODO CASCADA
-* Tener en cuenta el esquema P&D.
-* Busca rechazar todas las pertubaciones.
-* Los cambios en la corriente son perturbaciones.
+El control en cascada es una estrategia avanzada de control que se utiliza en sistemas complejos donde es necesario manejar múltiples variables interrelacionadas. Este método se basa en la implementación de dos o más lazos de control anidados, donde el lazo interno (secundario) actúa más rápidamente para rechazar perturbaciones antes de que afecten al lazo externo (primario). En el contexto de un esquema de Proceso y Diseño (P&D), el control en cascada es particularmente útil para mejorar la estabilidad y la precisión del sistema. El lazo interno se encarga de controlar variables que cambian rápidamente, como la corriente en un sistema eléctrico, mientras que el lazo externo gestiona variables de mayor nivel, como la temperatura o la presión, que son más lentas en su respuesta.
+
+Uno de los objetivos principales del control en cascada es rechazar todas las perturbaciones que puedan afectar al sistema. En este caso, los cambios en la corriente son considerados perturbaciones, ya que pueden alterar el funcionamiento óptimo del proceso. El lazo interno detecta y corrige estas variaciones de corriente de manera inmediata, evitando que se propaguen y afecten al lazo externo. Esto se logra mediante el uso de sensores y actuadores que monitorean y ajustan la corriente en tiempo real, manteniendo el sistema en un estado estable.
+
+
 C2 MAS RAPIDO QUE C1
 (imagen)
 
 ## 1. TIPOS DE CONTROLADORES
-LAZO MAS INTERNO:
-* Lazo que quiero rechazar
-* Poner un proporcional o controlador PI
-* No poner controlador D ya que vuelve lento el sistema
-LAZO EXTERNO:
-* Utilizar PI
-* Utilizar PID para garantizar llegar de la forma mas suave y eliminar el error de estado estacionario
+En el diseño de sistemas de control, la selección adecuada de los tipos de controladores para cada lazo es fundamental para garantizar un funcionamiento óptimo. En el caso del control en cascada, el lazo más interno juega un papel crítico, ya que es el encargado de rechazar las perturbaciones de manera rápida y eficiente. Para este lazo, se recomienda utilizar un controlador proporcional (P) o un controlador proporcional-integral (PI). El control proporcional permite una respuesta rápida a los cambios, mientras que la acción integral ayuda a eliminar el error en estado estacionario. Sin embargo, es importante evitar el uso de un controlador derivativo (D) en este lazo, ya que puede ralentizar el sistema y hacerlo menos reaccionar ante perturbaciones rápidas, como cambios en la corriente o en otras variables dinámicas.
 
-Se utiliza para medir mas de una variable
+Por otro lado, el lazo externo, que gestiona variables de mayor nivel y más lentas, como la temperatura o la presión, puede beneficiarse de un controlador proporcional-integral (PI) o incluso de un controlador proporcional-integral-derivativo (PID). El controlador PI es adecuado para mantener la estabilidad y corregir errores de estado estacionario, mientras que el controlador PID añade la acción derivativa, lo que permite una respuesta más suave y precisa, especialmente útil para garantizar que el sistema alcance el punto de consigna sin oscilaciones excesivas. La acción derivativa en el lazo externo ayuda a anticipar cambios y a reducir el tiempo de estabilización, lo que es crucial para procesos que requieren alta precisión.
 
-## 2. CASOS DE APLICACIONES
+* Caso 1: Donde las perturbaciones afectan mucho el funcionamiento del sistema.
+En sistemas donde las perturbaciones externas o internas tienen un impacto significativo en el desempeño, el control en cascada es ideal para mitigar estos efectos. Por ejemplo, en un proceso químico donde cambios bruscos en la temperatura ambiente o en la presión de alimentación pueden alterar la estabilidad del sistema, el lazo interno del control en cascada se encarga de rechazar rápidamente estas perturbaciones antes de que afecten al lazo externo. Esto asegura que el sistema mantenga su operación óptima, incluso en presencia de factores externos impredecibles.
 
-**Caso 1:** Donde las perturbaciones afenten mucho el funcionamiento del sistema.
+* Caso 2: Donde se tienen disponibles variables más rápidas que la variable controlada.
+El control en cascada es especialmente útil cuando se dispone de variables secundarias que responden más rápidamente que la variable principal que se desea controlar. Por ejemplo, en un sistema de control de temperatura en un reactor químico, la corriente eléctrica que alimenta un calentador puede ser una variable rápida, mientras que la temperatura del reactor es una variable más lenta. El lazo interno controla la corriente de manera rápida y precisa, mientras que el lazo externo ajusta la temperatura global. Esta jerarquía permite una respuesta más ágil y un control más efectivo del proceso.
 
-**Caso 2:** Donde tienen disponibles varibles mas rapidas que la variable controlada.
-
-**Caso 3:** Donde se desea hacer mas rapida la dinamica de la variable controlada.
-
+* Caso 3: Donde se desea hacer más rápida la dinámica de la variable controlada.
+En situaciones donde se necesita acelerar la respuesta del sistema, el control en cascada puede mejorar significativamente la dinámica de la variable controlada. Por ejemplo, en un sistema de control de nivel en un tanque, el flujo de entrada puede ser controlado por el lazo interno, mientras que el nivel del tanque es gestionado por el lazo externo. Al utilizar un controlador rápido en el lazo interno, se reduce el tiempo de respuesta del sistema, permitiendo que el nivel del tanque se ajuste de manera más rápida y precisa a los cambios en la demanda o en las condiciones de operación.
 
 ## 3. METODOS DE SINTONIZACIÓN
 **Empiricas:**
