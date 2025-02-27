@@ -60,15 +60,34 @@ Se utiliza para medir mas de una variable
   
   $tm=3.33$
 
-  ### 3.1 SINTONIZACION LAZO PRIMARIO
+  ### 3.2 SINTONIZACION LAZO PRIMARIO
 
   $KTotal=k1x1=1$
 
   $Tmtotal=tm1+tm2$
 
   $Kc1=\frac{1.2 x tTotal}{KTotal x tmTotal}=\frac{1.2 x 15}{1 x 11}=1.63$
-
   
+  $Tc1=2 tmTotal=2 x 11=22$
+
+ ### 3.2 LAZO ABIERTO EMPIRICO AUSTIN
+
+*Sin realizar separacion de los modelos
+
+*Sintonizar controladores primarios y secundarios en una sola prueba
+
+#### Sintonizar
+
+*El primer lazo que se sintoniza es el interno
+
+* El lazo externo tiene unas formulas estandar
+
+* Se consideran las entradas del sistema
+
+| **condiciones** | **PI** |**PID**|
+|---------------|To<To1|To<To1||
+|       S       ||$\frac{To1=To1}{2}>0.08|
+
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
 
