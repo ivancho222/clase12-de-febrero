@@ -41,9 +41,10 @@ Se utiliza un modelo matemático detallado del sistema, que puede incluir ecuaci
 En este enfoque, se utilizan técnicas avanzadas como redes neuronales, algoritmos genéticos, lógica difusa o sistemas de aprendizaje automático para sintonizar los controladores. Estos métodos son especialmente útiles en sistemas no lineales, multivariables o con incertidumbres, donde los métodos tradicionales pueden fallar. Por ejemplo, un algoritmo genético puede explorar múltiples combinaciones de parámetros del controlador para encontrar la que optimice el desempeño del sistema según un criterio específico, como el error cuadrático medio o el tiempo de estabilización.
 
 ### 3.1 EMPIRICO LAZO ABIERTO
-* Modelo e la variable principal
 
-* Modelo de las demas variables
+En el método de sintonización empírica en lazo abierto, se utiliza un modelo de la variable principal para analizar su respuesta dinámica. Por ejemplo, si la variable principal es la temperatura en un reactor, se aplica una entrada en escalón al sistema (como un cambio en la potencia del calentador) y se mide cómo evoluciona la temperatura en el tiempo. A partir de esta respuesta, se identifican parámetros como la ganancia estática (K), el tiempo de retardo (L) y la constante de tiempo (T), que permiten diseñar el controlador utilizando reglas como las de Ziegler-Nichols.
+
+Para modelar las demás variables, como la presión o el flujo en el mismo reactor, se sigue un procedimiento similar. Cada variable secundaria se analiza individualmente, aplicando una entrada en escalón y observando su respuesta. Estos modelos permiten entender cómo las variables secundarias interactúan con la principal y cómo afectan la dinámica global del sistema. Sin embargo, al trabajar en lazo abierto, este método no considera perturbaciones ni interacciones dinámicas complejas, lo que puede limitar su precisión en sistemas con múltiples variables interdependientes.
 
 **Ejercicio:**
 (imagen 2)
@@ -77,9 +78,11 @@ En este enfoque, se utilizan técnicas avanzadas como redes neuronales, algoritm
 
  ### 3.2 LAZO ABIERTO EMPIRICO AUSTIN
 
-*Sin realizar separacion de los modelos
+El método de sintonización en lazo abierto Austin es una técnica empírica que permite ajustar los controladores primarios y secundarios sin necesidad de separar los modelos de las variables involucradas. A diferencia de otros métodos que requieren analizar cada variable por separado, este enfoque realiza una única prueba para sintonizar ambos controladores de manera simultánea.
 
-*Sintonizar controladores primarios y secundarios en una sola prueba
+En este método, se aplica una entrada en escalón al sistema y se observa la respuesta conjunta de las variables primarias y secundarias. A partir de esta respuesta, se identifican los parámetros clave, como las constantes de tiempo (τ) y las ganancias (K), para ambos lazos. Luego, utilizando reglas empíricas o algoritmos de ajuste, se calculan los parámetros de los controladores primario y secundario en un solo paso.
+
+La ventaja de este enfoque es que simplifica el proceso de sintonización, especialmente en sistemas donde las variables están fuertemente acopladas y no es práctico separar sus dinámicas. Sin embargo, puede ser menos preciso en sistemas con interacciones complejas o no linealidades significativas, ya que no considera por completo las perturbaciones o las dinámicas individuales de cada variable.
 
 #### Sintonizar
 
