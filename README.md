@@ -45,7 +45,8 @@ Se utiliza para medir mas de una variable
 (imagen 3)
   $G2=\frac{0.5e^-s}{2s+1}$
   $G1=\frac{e^-10s}{15s+1}$  
-  $R=\frac{0.9*T2}{K2*tm}$$=\frac{0.9*2}{0.5}$  
+  $R=\frac{0.9*T2}{K2*tm}$
+  $=\frac{0.9*2}{0.5}$  
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
 
