@@ -85,7 +85,7 @@ Se utiliza para medir mas de una variable
 * Se consideran las entradas del sistema
 
 | **condiciones** | **PI** |        **PID**        |
-|-----------------|--------------------------------|
+|-----------------|--------|-----------------------|
 |      ...        | To<To1 |         To<To1        |
 |      ...        |   ...  |  (To1-To2)/(2)>0.08   |
 
