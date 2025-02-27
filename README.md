@@ -86,7 +86,7 @@ Se utiliza para medir mas de una variable
 
 | **condiciones** | **PI** |        **PID**        |
 |-----------------| To<To1 |         To<To1        |
-|       S         |        |$\frac{To1=To1}{2}>0.08|
+|       S         |   ...  |$\frac{To1=To1}{2}>0.08|
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
