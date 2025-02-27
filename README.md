@@ -55,12 +55,18 @@ Se utiliza para medir mas de una variable
   $Kc2=\frac{0.9xT2}{k2xtm}$
   $R=\frac{0.9*2}{0.5}$  
   $=36$
+  
   $Ti2=3.33$
+  
   $tm=3.33$
 
   ### 3.1 SINTONIZACION LAZO PRIMARIO
 
   $KTotal=k1x1=1$
+
+  $Tmtotal=tm1+tm2$
+
+  $Kc1=\frac{1.2 x tTotal}{KTotal x tmTotal}=\frac{1.2 x 15}{1 x 11}=1.63$
 
   
 ## 4. Ejemplos
