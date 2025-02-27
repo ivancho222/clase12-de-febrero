@@ -89,6 +89,22 @@ Se utiliza para medir mas de una variable
 |      ...        | To<To1 |         To<To1        |
 |      ...        |   ...  |  (To1-To2)/(2)>0.08   |
 
+*Con el metodo de cascada muy rara ves se sobre pasa del setpoint
+
+### 3.3 LAZO CERRADO
+
+#### Metodo Hang
+
+* Sintonizar metodo rele
+
+* Se sintetiza por aparte, es una sintonización mas facil de realizar
+
+* Se mide el periodo Ultimo y amplitud tener la ganacia ultima
+
+$To2=0.39$
+
+$Ku2=\frac{4d}{pixa}$ 
+
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
 
