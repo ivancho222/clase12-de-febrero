@@ -5,6 +5,9 @@ Uno de los objetivos principales del control en cascada es rechazar todas las pe
 
 
 C2 MAS RAPIDO QUE C1
+
+![Image](https://github.com/user-attachments/assets/ba2b77fb-e946-44b2-9069-22d5d53e176e)
+
 (imagen)
 
 ## 1. TIPOS DE CONTROLADORES
