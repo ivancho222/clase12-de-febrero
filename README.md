@@ -8,7 +8,6 @@ C2 MAS RAPIDO QUE C1
 
 ![Image](https://github.com/user-attachments/assets/ba2b77fb-e946-44b2-9069-22d5d53e176e)
 
-(imagen)
 
 ## 1. TIPOS DE CONTROLADORES
 En el diseño de sistemas de control, la selección adecuada de los tipos de controladores para cada lazo es fundamental para garantizar un funcionamiento óptimo. En el caso del control en cascada, el lazo más interno juega un papel crítico, ya que es el encargado de rechazar las perturbaciones de manera rápida y eficiente. Para este lazo, se recomienda utilizar un controlador proporcional (P) o un controlador proporcional-integral (PI). El control proporcional permite una respuesta rápida a los cambios, mientras que la acción integral ayuda a eliminar el error en estado estacionario. Sin embargo, es importante evitar el uso de un controlador derivativo (D) en este lazo, ya que puede ralentizar el sistema y hacerlo menos reaccionar ante perturbaciones rápidas, como cambios en la corriente o en otras variables dinámicas.
@@ -112,9 +111,13 @@ La ventaja de este enfoque es que simplifica el proceso de sintonización, espec
 
 * Se mide el periodo Ultimo y amplitud tener la ganacia ultima
 
+![Image](https://github.com/user-attachments/assets/e629fbe3-d516-40a5-84c6-73a2da2065c6)
+
 $To2=0.39$
 
 $Ku2=\frac{4d}{pixa}$ 
+
+![Image](https://github.com/user-attachments/assets/557e7767-b8f5-4373-8759-39e0b8814fdd)
 
 
 
