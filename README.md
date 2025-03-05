@@ -50,8 +50,8 @@ En el método de sintonización empírica en lazo abierto, se utiliza un modelo 
 Para modelar las demás variables, como la presión o el flujo en el mismo reactor, se sigue un procedimiento similar. Cada variable secundaria se analiza individualmente, aplicando una entrada en escalón y observando su respuesta. Estos modelos permiten entender cómo las variables secundarias interactúan con la principal y cómo afectan la dinámica global del sistema. Sin embargo, al trabajar en lazo abierto, este método no considera perturbaciones ni interacciones dinámicas complejas, lo que puede limitar su precisión en sistemas con múltiples variables interdependientes.
 
 **Ejercicio:**
-(imagen 2)
-(imagen 3)
+
+![Image](https://github.com/user-attachments/assets/b1298e4e-62fb-4099-a6dc-4604228441d3)
 
   $G2=\frac{0.5e^-s}{2s+1}$
   
