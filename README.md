@@ -54,6 +54,8 @@ Para modelar las demás variables, como la presión o el flujo en el mismo react
 
 ![Image](https://github.com/user-attachments/assets/b1298e4e-62fb-4099-a6dc-4604228441d3)
 
+Figura 2. Ejercicio
+
   $G2=\frac{0.5e^-s}{2s+1}$
   
   $G1=\frac{e^-10s}{15s+1}$  
@@ -115,11 +117,16 @@ La ventaja de este enfoque es que simplifica el proceso de sintonización, espec
 
 ![Image](https://github.com/user-attachments/assets/e629fbe3-d516-40a5-84c6-73a2da2065c6)
 
+
+Figura 3. Metodo Hang
+
 $To2=0.39$
 
 $Ku2=\frac{4d}{pixa}$ 
 
 ![Image](https://github.com/user-attachments/assets/557e7767-b8f5-4373-8759-39e0b8814fdd)
+
+Figura 4. Control cascada completo.
 
 ## CONCLUSIONES
 
