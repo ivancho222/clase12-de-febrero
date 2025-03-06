@@ -103,7 +103,9 @@ La ventaja de este enfoque es que simplifica el proceso de sintonización, espec
 |      ...        | To<To1 |         To<To1        |
 |      ...        |   ...  |  (To1-To2)/(2)>0.08   |
 
-*Con el metodo de cascada muy rara ves se sobre pasa del setpoint
+Tabla 1. Condiciones del sistema.
+
+* Con el metodo de cascada muy rara ves se sobre pasa del setpoint
 
 ### 3.3 LAZO CERRADO
 
