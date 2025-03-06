@@ -1,4 +1,5 @@
-# CLASE-12-DE-FEBRERO
+##CONTROL CASCADA
+
 El control en cascada es una estrategia avanzada de control que se utiliza en sistemas complejos donde es necesario manejar múltiples variables interrelacionadas. Este método se basa en la implementación de dos o más lazos de control anidados, donde el lazo interno (secundario) actúa más rápidamente para rechazar perturbaciones antes de que afecten al lazo externo (primario). En el contexto de un esquema de Proceso y Diseño (P&D), el control en cascada es particularmente útil para mejorar la estabilidad y la precisión del sistema. El lazo interno se encarga de controlar variables que cambian rápidamente, como la corriente en un sistema eléctrico, mientras que el lazo externo gestiona variables de mayor nivel, como la temperatura o la presión, que son más lentas en su respuesta.
 
 Uno de los objetivos principales del control en cascada es rechazar todas las perturbaciones que puedan afectar al sistema. En este caso, los cambios en la corriente son considerados perturbaciones, ya que pueden alterar el funcionamiento óptimo del proceso. El lazo interno detecta y corrige estas variaciones de corriente de manera inmediata, evitando que se propaguen y afecten al lazo externo. Esto se logra mediante el uso de sensores y actuadores que monitorean y ajustan la corriente en tiempo real, manteniendo el sistema en un estado estable.
@@ -119,5 +120,11 @@ $Ku2=\frac{4d}{pixa}$
 
 ![Image](https://github.com/user-attachments/assets/557e7767-b8f5-4373-8759-39e0b8814fdd)
 
+##CONCLUSIONES
 
+El control en cascada es una herramienta poderosa para mejorar el desempeño de sistemas complejos, especialmente en entornos donde las perturbaciones y las interacciones entre variables son significativas. Al implementar un lazo interno rápido y un lazo externo más lento, se logra una respuesta ágil y precisa, lo que permite mantener la estabilidad del sistema incluso en presencia de perturbaciones externas. La selección adecuada de los controladores, ya sea proporcional (P), proporcional-integral (PI) o proporcional-integral-derivativo (PID), es crucial para garantizar un funcionamiento óptimo. Además, los métodos de sintonización, tanto empíricos como basados en modelos rigurosos, ofrecen diversas opciones para ajustar los parámetros del controlador según las necesidades específicas del sistema. En resumen, el control en cascada no solo mejora la precisión y la estabilidad del sistema, sino que también aumenta su robustez frente a perturbaciones, lo que lo convierte en una estrategia indispensable en el diseño de sistemas de control avanzados.
+
+
+## REFERENCIAS
+Cote, J. E. (2024). Control de Movimiento (9° semestre). Recuperado de https://aulas.ecci.edu.co/mod/resource/view.php?id=217378
 
