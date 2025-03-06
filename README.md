@@ -89,7 +89,7 @@ La ventaja de este enfoque es que simplifica el proceso de sintonización, espec
 
 #### Sintonizar
 
-*El primer lazo que se sintoniza es el interno
+* El primer lazo que se sintoniza es el interno
 
 * El lazo externo tiene unas formulas estandar
 
